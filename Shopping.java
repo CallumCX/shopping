@@ -32,8 +32,4 @@ public class Shopping {
     public void setQuantity(int quantity) {
         this.quantity=quantity;
     }
-
-    public String toString() {
-        return "Item = " + getItem() + "Price = " + getPrice() + "Quantity = " + getQuantity();
-    }
 }

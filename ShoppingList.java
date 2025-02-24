@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ShoppingList {
     List<Shopping> shoppingList=new ArrayList<>();
@@ -30,9 +31,5 @@ public class ShoppingList {
             totalPrice += i.getPrice();
         }
         totalPrice = totalPrice * 0.85;
-    }
-
-    public String toString() {
-        return "List of all shopping items: " + getShoppingList();
     }
 }
