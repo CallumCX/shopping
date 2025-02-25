@@ -4,7 +4,7 @@ import java.util.*;
 public class Food {
     static Map<String, Double> foodDict = new HashMap<String, Double>();
 
-    public static void ReadFile() throws FileNotFoundException {
+    public static Map<String, Double> ReadFile() throws FileNotFoundException {
         File fileName = new File("Dictionary.txt");
         Scanner fileData = new Scanner(fileName);
 
@@ -14,6 +14,8 @@ public class Food {
             double priceData = Double.parseDouble(foodData[1].replace(";", ""));
             foodDict.put(nameDate, priceData);
         }
+
+        return foodDict;
     }
 }
 
