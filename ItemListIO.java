@@ -55,8 +55,9 @@ public class ItemListIO {
         }
     }
 
-    public static void getFoodList() {
-        System.out.println(allFoodItems);
+    public static List<String> getFoodList() {
+        System.out.println(allFoodItems);;
+        return allFoodItems;
     }
 
     public static void addToFoodList(Scanner input) {
@@ -66,9 +67,6 @@ public class ItemListIO {
             keyList.add(i.getKey());
         }
 
-        System.out.println(keyList);
-
-        System.out.println("What food do you want to add?: ");
         String givenItem = input.nextLine();
 
        if (keyList.contains(givenItem)) {
